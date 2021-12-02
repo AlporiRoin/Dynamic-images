@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: 'Muli', sans-serif;
+
+  justify-content: center;
+
+  background: #c6c3b3;
+
+  overflow: hidden;
+
+  margin: 0;
+  
+  height: 100vh;
+  
+  align-items: center;
+
+}
+
+.title {
+
+  text-align: center;
+
+}
+
+.title h1 {
+
+  font-size: 20pt;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+
+  color: #312921;
+
+}
+
+.container {
+
+  width: 100%;
+
+  display: flex;
+
+  padding: 0 20px;
+
+}
+
+.slide {
+
+  position: relative;
+
+  height: 80vh;
+
+  margin: 10px;
+
+  color: #fff;
+
+  flex: 1;
+
+  cursor: pointer;
+  
+  border-radius: 20px;
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  transition: all 500ms ease-in-out;
+
+}
+
+.slide h3 {
+
+  position: absolute;
+
+  font-size: 24px;
+
+  bottom: 20px;
+
+  left: 20px;
+
+  margin: 0;
+
+  opacity: 0;
+
+}
+
+.slide.active {
+
+  flex: 10;
+
+}
+
+.slide.active h3 {
+
+  opacity: 1;
+
+  transition: opacity 0.3s ease-in 0.4s;
+
+}
